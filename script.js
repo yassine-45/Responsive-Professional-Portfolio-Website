@@ -14,6 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       navLinks.forEach(nav => nav.classList.remove("active"));
       this.classList.add("active");
+      
+
     });
   });
 });
+//hamburger menu -----------
+const burgerButton=document.querySelector("#burgerButton");
+const mobileMenu=document.querySelector("#mobileMenu")
+burgerButton.addEventListener('click',()=>{
+mobileMenu.classList.toggle('visible')
+
+})
